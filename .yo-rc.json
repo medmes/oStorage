@@ -1,0 +1,14 @@
+{
+  "generator-kraken": {
+    "taskModule": "grunt",
+    "lintModule": "eslint",
+    "description": "octoStorage is an app built by using JS End-to-End.",
+    "author": "octo_rangers",
+    "templateModule": false,
+    "i18n": "i18n",
+    "componentPackager": "bower",
+    "cssModule": "sass",
+    "jsModule": false,
+    "useJson": null
+  }
+}
