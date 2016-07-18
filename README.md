@@ -1,7 +1,7 @@
 oStorage
 ===========
 
-octoStorage is an app built by using JS End-to-End. The purpose of this app is to give you ability to download & upload files with making it easy and simple to use.
+oStorage is an app built by using JS End-to-End. The purpose of this app is to give you ability to download & upload files with making it easy and simple to use.
 
 ### Installation
 
