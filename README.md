@@ -21,3 +21,10 @@ If you want to run oStorage app, you need just to run this simple command:
 $ npm start
 ```
 
+### Test
+
+To run tests, type this command:
+
+```sh
+$ npm test
+```
