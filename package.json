@@ -1,7 +1,7 @@
 {
-  "name": "octostorage",
+  "name": "oStorage",
   "version": "0.1.0",
-  "description": "octoStorage is an app built by using JS End-to-End.",
+  "description": "oStorage is an app built by using JS End-to-End.",
   "author": "octo_rangers",
   "main": "index.js",
   "scripts": {

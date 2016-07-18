@@ -9,22 +9,22 @@ module.exports = function (router) {
 
     router.get('/', function (req, res) {
 
-        res.send(model);
+        res.send('<code><pre>' + JSON.stringify(model, null, 2) + '</pre></code>');
 
     });
 
     router.get('/test',function(req, res){
-        res.send("<h1>Hello from test</h1>");
+        res.send('<h1>Hello from test</h1>');
     });
 
-    router.get('/api/', function(req, res){
+    router.get('/api', function(req, res){
+
         var result = {};
-            result.content = "";
         var filesNames = fs.readdirSync('ftp');
-            filesNames.map(function(file){
-                result.content += ' '+file;
-                console.log(file);
-            });
+        filesNames.map(function(file){
+            result.content += ' '+file;
+        });
+
         res.send(result);
     });
 
