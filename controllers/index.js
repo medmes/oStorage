@@ -1,7 +1,6 @@
 'use strict';
 
 var IndexModel = require('../models/index');
-var fs = require('fs');
 var fileService = require('../services/FileService');
 
 module.exports = function (router) {
