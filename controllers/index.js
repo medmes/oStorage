@@ -2,6 +2,7 @@
 
 var IndexModel = require('../models/index');
 var fs = require('fs');
+var fileService = require('../services/FileService');
 
 module.exports = function (router) {
 
@@ -17,15 +18,12 @@ module.exports = function (router) {
         res.send('<h1>Hello from test</h1>');
     });
 
-    router.get('/api', function(req, res){
+    router.get('/api/files/all', function(req, res){
 
-        var result = {};
-        var filesNames = fs.readdirSync('ftp');
-        filesNames.map(function(file){
-            result.content += ' '+file;
+        fileService.getFiles('ftp').then(function(result){
+            res.send(result);
         });
 
-        res.send(result);
     });
 
 };

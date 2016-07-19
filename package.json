@@ -10,6 +10,7 @@
     "all": "npm run build && npm run test"
   },
   "dependencies": {
+    "bluebird": "^3.4.1",
     "construx": "^1.0.0",
     "construx-copier": "^1.0.0",
     "construx-sass": "^1.0.0",
