@@ -16,7 +16,8 @@
     "construx-sass": "^1.0.0",
     "eslint": "^1.10.3",
     "express": "^4.12.2",
-    "kraken-js": "^2.0.0"
+    "kraken-js": "^2.0.0",
+    "socket.io": "^1.4.8"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

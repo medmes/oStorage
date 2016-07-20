@@ -2,6 +2,7 @@
 
 var app = require('./index');
 var http = require('http');
+var socketService = require('./services/SocketService')
 
 
 var server;
@@ -11,7 +12,12 @@ var server;
  */
 
 server = http.createServer(app);
-server.listen(process.env.PORT || 8000);
+var io = require('socket.io')(server);
+var port = process.env.PORT || 8000;
+
+socketService(io)
+
+server.listen(port);
 server.on('listening', function () {
     console.log('Server listening on http://localhost:%d', this.address().port);
 });
